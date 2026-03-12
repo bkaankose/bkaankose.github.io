@@ -713,6 +713,20 @@ html[data-theme="dark"] .icon-moon { display: none; }
   letter-spacing: -0.01em;
 }
 
+.project-nda {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
 .project-link {
   display: flex;
   align-items: center;
