@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Morgan — Full-Stack Developer & Product Designer</title>
-  <meta name="description" content="Freelance full-stack developer and product designer based in Berlin. I build fast, focused digital products for startups and growing teams." />
 
-  <!-- No-flash theme script: runs synchronously before CSS renders -->
+  <!-- Primary SEO -->
+  <title>Alex Morgan — Windows Developer | Desktop Apps, System Software & Consulting</title>
+  <meta name="description" content="Alex Morgan is a freelance Windows developer specializing in desktop applications, system-level software, and .NET development. Based in Berlin, available worldwide." />
+  <meta name="keywords" content="Windows developer, desktop applications, .NET developer, WPF, WinUI, C#, C++, Win32, freelance developer, Berlin, software consultant" />
+  <meta name="author" content="Alex Morgan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alexmorgan.dev/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Morgan — Windows Developer" />
+  <meta property="og:description" content="Freelance Windows developer specializing in desktop apps, system software, and .NET. Based in Berlin, available worldwide." />
+  <meta property="og:url" content="https://alexmorgan.dev/" />
+  <meta property="og:site_name" content="Alex Morgan" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alex Morgan — Windows Developer" />
+  <meta name="twitter:description" content="Freelance Windows developer specializing in desktop apps, system software, and .NET." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Morgan",
+    "jobTitle": "Windows Developer",
+    "url": "https://alexmorgan.dev",
+    "email": "hello@alexmorgan.dev",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://github.com/alexmorgan",
+      "https://linkedin.com/in/alexmorgan"
+    ],
+    "knowsAbout": ["Windows Development", "C#", ".NET", "WPF", "WinUI", "Win32", "C++", "Desktop Applications"]
+  }
+  </script>
+
+  <!-- No-flash theme script -->
   <script>
     (function() {
       var saved = localStorage.getItem('theme');
@@ -17,7 +58,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,7 +67,10 @@
   <header>
     <nav class="nav" id="nav">
       <div class="nav-inner container">
-        <a href="#hero" class="nav-logo">Alex Morgan</a>
+        <div class="nav-brand">
+          <a href="#hero" class="nav-logo">Alex Morgan</a>
+          <span class="nav-subtitle">Windows Developer</span>
+        </div>
         <div class="nav-right">
           <ul class="nav-links" id="navLinks">
             <li><a href="#about" class="nav-link">About</a></li>
@@ -34,8 +78,8 @@
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
+          <a href="mailto:hello@alexmorgan.dev" class="nav-email" aria-label="Email">hello@alexmorgan.dev</a>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-            <!-- Sun icon (shown in dark mode) -->
             <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -47,7 +91,6 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <!-- Moon icon (shown in light mode) -->
             <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
@@ -65,12 +108,19 @@
     <!-- HERO -->
     <section id="hero" class="hero">
       <div class="container hero-inner">
-        <p class="hero-eyebrow reveal">Berlin, Germany · Available for work</p>
-        <h1 class="hero-headline reveal">I build digital products<br />that <em>ship and scale.</em></h1>
-        <p class="hero-sub reveal">Full-stack developer & product designer with 6+ years helping startups and growing teams turn ambitious ideas into production-ready software.</p>
-        <div class="hero-actions reveal">
-          <a href="https://cal.com/alexmorgan" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Free Call</a>
-          <a href="./assets/cv.pdf" download class="btn btn-secondary">Download CV</a>
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-eyebrow reveal">Berlin, Germany &middot; Available for work</p>
+            <h1 class="hero-headline reveal">Building robust<br />Windows software<br />that <span class="text-accent">just works.</span></h1>
+            <p class="hero-sub reveal">Windows developer with 6+ years of experience crafting desktop applications, system-level tools, and enterprise software. I help teams ship polished, production-ready Windows software.</p>
+            <div class="hero-actions reveal">
+              <a href="https://cal.com/alexmorgan" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Free Call</a>
+              <a href="./assets/cv.pdf" download class="btn btn-secondary">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-portrait reveal">
+            <img src="./assets/profile-placeholder.svg" alt="Alex Morgan — Windows Developer" width="280" height="280" loading="eager" />
+          </div>
         </div>
         <div class="hero-proof reveal">
           <div class="proof-item">
@@ -89,17 +139,41 @@
       </div>
     </section>
 
+    <!-- TRUSTED BY -->
+    <section id="trusted-by" class="trusted-by">
+      <div class="container">
+        <p class="trusted-label reveal">Trusted by</p>
+        <div class="trusted-logos reveal">
+          <div class="trusted-logo-item">
+            <span class="trusted-logo-text">Contoso</span>
+          </div>
+          <div class="trusted-logo-item">
+            <span class="trusted-logo-text">Northwind</span>
+          </div>
+          <div class="trusted-logo-item">
+            <span class="trusted-logo-text">Fabrikam</span>
+          </div>
+          <div class="trusted-logo-item">
+            <span class="trusted-logo-text">Tailspin</span>
+          </div>
+          <div class="trusted-logo-item">
+            <span class="trusted-logo-text">WideWorld</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT -->
     <section id="about" class="about">
       <div class="container">
         <div class="about-grid">
           <div class="about-left reveal">
             <div class="section-label">About</div>
-            <h2 class="section-heading">Your product deserves<br /><em>an engineer who cares.</em></h2>
+            <h2 class="section-heading">Your project deserves<br />an engineer who <span class="text-accent">cares.</span></h2>
           </div>
           <div class="about-right reveal">
-            <p>I don't just write code — I build products. From the first architecture decision to the final deploy, I own the full stack so you can focus on growing your business.</p>
-            <p>My background spans frontend architecture, API design, and design systems. I've shipped for seed-stage startups and established companies alike, and I bring the same rigor to every engagement.</p>
+            <p>I don't just write code &mdash; I build products. From the first architecture decision to the final deploy, I own the full stack so you can focus on growing your business.</p>
+            <p>My background spans native Windows development, .NET ecosystem, and desktop UI frameworks. I've shipped for startups and enterprises alike, bringing the same rigor to every engagement.</p>
             <div class="about-meta">
               <div class="meta-item">
                 <span class="meta-label">Based in</span>
@@ -123,50 +197,79 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-label reveal">What I Do</div>
-        <h2 class="section-heading reveal">End-to-end execution,<br /><em>not just deliverables.</em></h2>
-        <div class="services-grid">
-          <div class="service-card reveal">
-            <h3 class="service-title">Full-Stack Development</h3>
-            <p class="service-desc">Production-ready web applications built with React, Next.js, Node.js, and PostgreSQL. Clean architecture, tested code, deployed with confidence.</p>
-            <div class="skill-tags">
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">GraphQL</span>
+        <h2 class="section-heading reveal">End-to-end execution,<br />not just <span class="text-accent">deliverables.</span></h2>
+
+        <div class="services-category reveal">
+          <h3 class="services-category-title">Development</h3>
+          <div class="services-grid">
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h4 class="service-title">Desktop Applications</h4>
+              <p class="service-desc">Native Windows apps built with WPF, WinUI 3, and .NET. High-performance, polished user experiences with modern design patterns.</p>
+              <div class="skill-tags">
+                <span class="tag">C#</span>
+                <span class="tag">.NET</span>
+                <span class="tag">WPF</span>
+                <span class="tag">WinUI 3</span>
+                <span class="tag">XAML</span>
+              </div>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h4 class="service-title">System Software</h4>
+              <p class="service-desc">Low-level Windows development including services, drivers, CLI tools, and system integrations. Built for reliability and performance.</p>
+              <div class="skill-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Win32</span>
+                <span class="tag">COM</span>
+                <span class="tag">PowerShell</span>
+              </div>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <h4 class="service-title">Available Worldwide</h4>
+              <p class="service-desc">Remote-first workflow with proven async communication. I work across time zones and integrate seamlessly with your team.</p>
+              <div class="skill-tags">
+                <span class="tag">Remote</span>
+                <span class="tag">Async</span>
+                <span class="tag">Agile</span>
+              </div>
             </div>
           </div>
-          <div class="service-card reveal">
-            <h3 class="service-title">Product Design</h3>
-            <p class="service-desc">From wireframes to polished interfaces. I design systems that are intuitive for users and maintainable for engineering teams.</p>
-            <div class="skill-tags">
-              <span class="tag">Figma</span>
-              <span class="tag">Design Systems</span>
-              <span class="tag">CSS / SCSS</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">Responsive Design</span>
+        </div>
+
+        <div class="services-category reveal">
+          <h3 class="services-category-title">Consulting</h3>
+          <div class="consulting-grid">
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Code Reviews</h4>
+              <p class="consulting-desc">In-depth review of your Windows codebase for quality, security, and performance.</p>
             </div>
-          </div>
-          <div class="service-card reveal">
-            <h3 class="service-title">Infrastructure & DevOps</h3>
-            <p class="service-desc">Reliable deployments, CI/CD pipelines, and cloud infrastructure. Your product stays fast, available, and easy to ship updates to.</p>
-            <div class="skill-tags">
-              <span class="tag">Docker</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Vercel</span>
-              <span class="tag">CI / CD</span>
-              <span class="tag">Git</span>
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Architecture Design</h4>
+              <p class="consulting-desc">System design and architecture planning for scalable Windows applications.</p>
             </div>
-          </div>
-          <div class="service-card reveal">
-            <h3 class="service-title">Technical Consulting</h3>
-            <p class="service-desc">Architecture reviews, tech stack decisions, and hands-on guidance. I help teams ship better software without the overhead of a full-time hire.</p>
-            <div class="skill-tags">
-              <span class="tag">Code Review</span>
-              <span class="tag">Technical Writing</span>
-              <span class="tag">Product Thinking</span>
-              <span class="tag">Async Communication</span>
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Team Bootstrapping</h4>
+              <p class="consulting-desc">Set up dev workflows, CI/CD pipelines, and best practices for your Windows team.</p>
+            </div>
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Performance Tuning</h4>
+              <p class="consulting-desc">Profiling and optimization of existing applications for speed and resource efficiency.</p>
+            </div>
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Migration & Modernization</h4>
+              <p class="consulting-desc">Migrate legacy Win32/WinForms apps to modern .NET, WPF, or WinUI 3.</p>
+            </div>
+            <div class="consulting-item reveal">
+              <h4 class="consulting-title">Team Augmentation</h4>
+              <p class="consulting-desc">Embed with your team as a senior Windows developer for critical project phases.</p>
             </div>
           </div>
         </div>
@@ -191,12 +294,12 @@
                   </svg>
                 </a>
               </div>
-              <p class="project-desc">Real-time personal finance dashboard with bank sync, budget forecasting, and monthly reports. Built for individuals who want clarity over their money.</p>
+              <p class="project-desc">Real-time personal finance dashboard with bank sync, budget forecasting, and monthly reports. Native Windows desktop app with modern WinUI 3 interface.</p>
             </div>
             <div class="project-tags">
-              <span class="tag tag-sm">React</span>
-              <span class="tag tag-sm">Node.js</span>
-              <span class="tag tag-sm">PostgreSQL</span>
+              <span class="tag tag-sm">C#</span>
+              <span class="tag tag-sm">.NET</span>
+              <span class="tag tag-sm">WinUI 3</span>
             </div>
           </article>
 
@@ -211,32 +314,32 @@
                   </svg>
                 </a>
               </div>
-              <p class="project-desc">CMS-backed portfolio builder for visual artists. Custom domains, fine-grained layout controls, and built-in analytics to understand audience engagement.</p>
+              <p class="project-desc">Portfolio management tool for visual artists. WPF-based desktop app with custom rendering, gallery layouts, and export capabilities.</p>
             </div>
             <div class="project-tags">
-              <span class="tag tag-sm">Next.js</span>
-              <span class="tag tag-sm">Contentful</span>
-              <span class="tag tag-sm">Vercel</span>
+              <span class="tag tag-sm">WPF</span>
+              <span class="tag tag-sm">MVVM</span>
+              <span class="tag tag-sm">SQLite</span>
             </div>
           </article>
 
           <article class="project-row reveal">
             <div class="project-info">
               <div class="project-header">
-                <h3 class="project-name">Pulse API</h3>
-                <a href="#" class="project-link" aria-label="View Pulse API project">
+                <h3 class="project-name">Pulse Monitor</h3>
+                <a href="#" class="project-link" aria-label="View Pulse Monitor project">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
                 </a>
               </div>
-              <p class="project-desc">Open-source uptime monitoring API with webhook notifications, SLA tracking, and a public status page. Used by over 200 teams in production.</p>
+              <p class="project-desc">Windows service for uptime monitoring with system tray notifications, webhook integrations, and a WPF dashboard. Used by 200+ teams.</p>
             </div>
             <div class="project-tags">
-              <span class="tag tag-sm">Python</span>
-              <span class="tag tag-sm">FastAPI</span>
-              <span class="tag tag-sm">Redis</span>
+              <span class="tag tag-sm">C#</span>
+              <span class="tag tag-sm">Win32</span>
+              <span class="tag tag-sm">WPF</span>
             </div>
           </article>
 
@@ -244,12 +347,12 @@
       </div>
     </section>
 
-    <!-- CONTACT / BOOK A CALL -->
+    <!-- CONTACT -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="contact-cta reveal">
           <div class="section-label">Contact</div>
-          <h2 class="section-heading">Ready to build<br /><em>something great?</em></h2>
+          <h2 class="section-heading">Ready to build<br />something <span class="text-accent">great?</span></h2>
           <p class="contact-sub">Let's talk about your project. Book a free 30-minute intro call and I'll give you an honest assessment of how I can help.</p>
           <div class="contact-actions">
             <a href="https://cal.com/alexmorgan" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Free Call</a>
@@ -282,7 +385,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-copy">&copy; 2026 Alex Morgan</p>
+      <p class="footer-copy">&copy; 2026 Alex Morgan. All rights reserved.</p>
       <nav class="footer-links" aria-label="Social links">
         <a href="https://github.com/alexmorgan" target="_blank" rel="noopener" class="footer-link">GitHub</a>
         <a href="https://linkedin.com/in/alexmorgan" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
