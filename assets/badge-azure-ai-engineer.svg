@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#005B70;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003A4F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B4D8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077A8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="96" fill="url(#bg)" />
+  <!-- Associate badge: decorative outer ring markings -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="70" fill="url(#inner)" />
+  <!-- Gear + AI icon to represent engineer -->
+  <g transform="translate(100,88)" fill="white" opacity="0.95">
+    <!-- Gear outer shape -->
+    <path d="M-4,-22 L4,-22 L6,-16 C8,-15 10,-14 12,-12 L18,-14 L22,-8 L17,-4 C17,-2 17,0 17,2 L22,6 L18,12 L12,10 C10,12 8,13 6,14 L4,20 L-4,20 L-6,14 C-8,13 -10,12 -12,10 L-18,12 L-22,6 L-17,2 C-17,0 -17,-2 -17,-4 L-22,-8 L-18,-14 L-12,-12 C-10,-14 -8,-15 -6,-16 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="8" fill="white" opacity="0.9"/>
+    <circle cx="0" cy="0" r="5" fill="url(#inner)"/>
+    <!-- Small star/asterisk inside gear center for AI -->
+    <line x1="0" y1="-3.5" x2="0" y2="3.5" stroke="white" stroke-width="1.2"/>
+    <line x1="-3" y1="-1.8" x2="3" y2="1.8" stroke="white" stroke-width="1.2"/>
+    <line x1="3" y1="-1.8" x2="-3" y2="1.8" stroke="white" stroke-width="1.2"/>
+  </g>
+  <!-- Microsoft logo squares -->
+  <g transform="translate(84,118)">
+    <rect x="0" y="0" width="12" height="12" fill="#F25022" rx="1"/>
+    <rect x="14" y="0" width="12" height="12" fill="#7FBA00" rx="1"/>
+    <rect x="0" y="14" width="12" height="12" fill="#00A4EF" rx="1"/>
+    <rect x="14" y="14" width="12" height="12" fill="#FFB900" rx="1"/>
+  </g>
+  <!-- Text -->
+  <text x="100" y="160" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="0.5" opacity="0.9">MICROSOFT CERTIFIED</text>
+  <text x="100" y="174" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="8" letter-spacing="0.3" opacity="0.75">AI-102</text>
+</svg>
